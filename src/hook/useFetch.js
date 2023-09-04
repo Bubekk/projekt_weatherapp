@@ -15,7 +15,7 @@ export default function useFetch(city) {
     async function getData() {
       try {
         setLoading(true);
-        const API_KEY = "3d04c657cd0eb5fed6e94795be21cf67";
+        const API_KEY = "YOUR API KEY FROM OPENWEATHER";
         const URL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}`;
 
         const response = await fetch(URL);
